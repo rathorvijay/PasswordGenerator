@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>password generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="hadding">
+                <h>password generator</h>
+            </div>
+            <div class="text">
+                <input type="text" placeholder="password
+                "  passwordDisplay readonly>
+                <div class="copy">
+                    <i id="cpymsg" class="ri-file-copy-line"></i>
+                    <span class="active" data-copyMsg></span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="length">
+                    <div class="ch">
+                        <h>password length</h>
+                    </div>
+                    <div class="counter"></div>
+                </div>
+                <div class="rang">
+                    <input id="range" class="range" type="range" min="1" max="20" step="1">
+                </div>
+                <div class="checkbox">
+                    <ul>
+                        <li>
+                            <div class="uppercase">
+                                <input type="checkbox" id="uppercase">
+                                <h>include uppercase latter</h>
+                                <!-- <input type="checkbox" id="uppercase">
+                                <label for="uppercase">include uppercase latter</label> -->
+                            </div>
+                            <div class="uppercase" >
+                                <input type="checkbox" id="lowercase">
+                                <h>include lowercase latter</h>
+                            </div>
+                            <div class="uppercase" >
+                                <input type="checkbox" id="number">
+                                <h>include number</h>
+                            </div>
+                            <div class="uppercase" >
+                                <input type="checkbox" id="symbols">
+                                <h>include symbols</h>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="strengthbox">
+                    <div class="strength">
+                        Strength
+                    </div>
+                    <div class="color">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <button id="generatePassword">generator password</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
